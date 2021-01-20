@@ -902,40 +902,28 @@ ul.social-network li {
 				 /*Card CSS Section*\
 /***********************************************************/
 
-* {
-	margin: 0;
-	padding: 0;
-	font-family: "Sofia", sans-serif;
-  }
   
-  h2 {
-	color: #0a4870;
-	font-weight: 500;
-  }
-  
-  ul {
+.products-section ul {
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
 	padding: 0;
   }
+  
   ul .booking-card {
 	position: relative;
-	width: 300px;
 	display: flex;
-	flex: 0 0 300px;
+	width: 100% !important;
+
 	flex-direction: column;
-	margin: 20px;
 	margin-bottom: 30px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
 	overflow: hidden;
 	background-position: center center;
 	background-size: cover;
 	text-align: center;
 	color: #0a4870;
 	transition: 0.3s;
+	    box-shadow: 0px 0px 57px -43px rgba(0,0,0,0.75);
   }
   ul .booking-card::before {
 	content: "";
@@ -947,6 +935,7 @@ ul.social-network li {
 	background: rgba(10, 72, 112, 0);
 	transition: 0.3s;
   }
+  
   ul .booking-card .book-container {
 	height: 200px;
   }
@@ -1057,21 +1046,7 @@ ul.social-network li {
 	opacity: 1;
   }
   
-  @media (max-width: 768px) {
-	ul .booking-card::before {
-	  background: rgba(10, 72, 112, 0.6);
-	}
-	ul .booking-card .book-container .content {
-	  opacity: 1;
-	  transform: translateY(0px);
-	}
-	ul .booking-card .informations-container {
-	  transform: translateY(0px);
-	}
-	ul .booking-card .informations-container .more-information {
-	  opacity: 1;
-	}
-  }
+
   .credits {
 	display: table;
 	background: #0a4870;
@@ -1090,4 +1065,7 @@ ul.social-network li {
   
   h1 {
 	margin: 10px 20px;
+  }
+  @media (max-width: 768px) {
+
   }
