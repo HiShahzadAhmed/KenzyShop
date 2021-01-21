@@ -47,5 +47,16 @@
 	});  
 	
   })(jQuery);
+//blog card
+  var swiper = new Swiper('.blog-slider', {
+	spaceBetween: 30,
+	effect: 'fade',
+	loop: true,
 
-  
+
+  });
+
+  //explore bottom slider
+  $('#blogCarousel').carousel({
+	interval: 5000
+});
