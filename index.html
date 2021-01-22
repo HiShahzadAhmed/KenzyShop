@@ -5,6 +5,7 @@
 		<title>Kenzy Shop</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body class="hero-anime">
@@ -45,19 +46,19 @@
 											<a class="nav-link" href="#">Login</a>
 										</li>
 										<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-											<a class="nav-link" href="explore.html">Explore</a>
+											<a class="nav-link" href="explore.html">Gallery</a>
 										</li>
 										<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-											<a class="nav-link" href="#">Gallery</a>
-										<!-------- Drop Down
-												<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Gallery</a>
-												<div class="dropdown-menu">
-												<a class="dropdown-item" href="#">Gallery 1</a>
-												<a class="dropdown-item" href="#">Gallery 2</a>
-												<a class="dropdown-item" href="#">Gallery 3</a>
-												<a class="dropdown-item" href="#">Gallery 4</a>
 											
-											</div>  -->
+											<!-------- Drop Down
+													<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Gallery</a>
+													<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Gallery 1</a>
+													<a class="dropdown-item" href="#">Gallery 2</a>
+													<a class="dropdown-item" href="#">Gallery 3</a>
+													<a class="dropdown-item" href="#">Gallery 4</a>
+												
+												</div>  -->
 										</li>
 										<li class=" pl-4 pl-md-0 ml-0 ml-md-4">
 											<button class="btn btn-site">Place Ads</button>
@@ -71,353 +72,168 @@
 				</div>
 			</div>
 		</header>
-		<!------------- END Header Section ------------------------>
-		<!------------- Banner Section ---------------------------->
-		<section class="banner">
-			<!---===banner start=====-->
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 mt-1">
-						<h2 class="font-weight-bold text-white">All Ads</h2>
-					</div>
-					<div class="col-lg-6">
-						<div class="input-group mb-3 filter-search">
-							<select class="custom-select form-control" id="inputGroupSelect02">
-								<option selected hidden="">Price order</option>
-								<option value="1">High to Low</option>
-								<option value="2">Low to High</option>
-							</select>
-							<div class="input-group-append">
-								<button class="input-group-text btn-filter">Filter</button>
-							</div>
+        <!------------- END Header Section ------------------------>
+        <!------------- Start Content Section ------------------------> 
+<!------------- Filter Section ---------------------------->
+<section class="banner">
+    <!---===Filter Start=====-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="input-group mb-3 filter-search">
+                    <input type="text" class="custom-input form-control" placeholder="What are you looking for" >
+                    <select class="custom-select form-control" id="inputGroupSelect02">
+                        <option selected hidden="">Select category</option>
+                        <option value="1">High to Low</option>
+                        <option value="2">Low to High</option>
+                    </select>
+                    <select class="custom-select form-control" id="inputGroupSelect02">
+                        <option selected hidden="">Select City</option>
+                        <option value="1">High to Low</option>
+                        <option value="2">Low to High</option>
+                    </select>
+                    <div class="input-group-append">
+                        <button class="input-group-text btn-filter"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------- Search Bar  ---------------->
+    </div>
+</section>
+<!------------- END Filter section ------------------------>
+<!--------------- Explore Section ------------------------->
+<section class="explore">
+<div class="container">
+    <div class="text-center mt-5 explore-text"><h3>Explore Our Sections </h3></div>
+<div class="row p-lr-15">
+    <div class="col-lg-3 col-md-3 col-sm-12  explore-box1 text-center">
+        <h2>ENGINES</h2>
+        <button class="btn btn-outline-light mt-4">Search in Engine</button>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12 explore-box2 text-center">
+        <h2>MARKET</h2>
+        <button class="btn btn-outline-light mt-4">Search in Engine</button>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12 explore-box3 text-center">
+        <h2>PROPERTIES</h2>
+        <button class="btn btn-outline-light mt-4">Search in Engine</button>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12 explore-box4 text-center">
+        <h2>WORK</h2>
+        <button class="btn btn-outline-light mt-4">Search in Engine</button>
+    </div>
+</div>
+</div>
+</section>
+<!--------------- End Explore Section --------------------->
+<!-- Blog section -->
+<section class="mt-5">
+    <div class="container">
+        <div class="blog-slider p-lr-15">
+            <div class="blog-slider__wrp swiper-wrapper">
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img"> 
+                    <img src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                    </div>
+                    <div class="content">
+                    <div class="blog-slider__title">Start Earning</div>
+                    <div class="blog-slider__text">Give your used one a second chance: sell what you no longer use, immediately. </div>
+                    <a href="#" class="blog-slider__button">Place Ad</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END Blog Section -->
+<!------------ Start Magazine Section ------------->
+<section class="magazine mt-5">
+<div class="container">
+    <div class="row">
+    <div class="col-md-6 mag-img">
+        <img src="https://kenzy.shop/images/happy-christmas-santa-claus-with-his-sleigh-with-christmas-gifts-merry-kids-hd-desktop-wallpapers-for-tablets-and-mobile-phones-3840%D1%852400-wallpaper-preview.jpg" alt="">
+    </div>
+    <div class="col-md-6 content mt-5">
+        <span class="magzine-tile">NOW MAGAZINE</span>
+        <h2>25 times Christmas</h2>
+		<p>A different December but no less special</p>
+    </div>
+    </div>
+</div>
+</section>
+<!------------ END Magazine Section ------------->
+<!------------ Start Slider Section ------------->
+<section class="slider mt-5">
+	<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+<h4>The best deal is always the safe one</h4>
+<p>Here are some simple tips for closing your business safely:</p>
+<!-- Slider Section -->
+<div class="row blog">
+	<div class="col-md-12">
+		<div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+			<ol class="carousel-indicators">
+				<li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#blogCarousel" data-slide-to="1"></li>
+			</ol>
+
+			<!-- Carousel items -->
+			<div class="carousel-inner">
+
+				<div class="carousel-item active">
+					<div class="row ">
+						<div class="col-md-4  text-center">
+					       <div class=" blog-slide">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+						</div>
+						<div  class="col-md-4 text-center">
+							<div class=" blog-slide">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class=" blog-slide">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
 						</div>
 					</div>
+					<!--.row-->
 				</div>
-				<!----------------- Search Bar  ---------------->
+				<!--.item-->
+
+				<div class="carousel-item">
+					<div class="row ">
+						<div class="col-md-4  text-center">
+					       <div class=" blog-slide">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+						</div>
+						<div  class="col-md-4 text-center">
+							<div class=" blog-slide">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class=" blog-slide">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+						</div>
+					</div>
+					<!--.row-->
+				</div>
+				<!--.item-->
+
 			</div>
-		</section>
-		<!------------- END Banner section ------------------------>
-		
-			<!-------------Section Products Card----------------------->
-			<section class="products-section mt-4">
-				<div class="container mt-5">
-					<div class="row">
-						<div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-							<ul>
-								<li class="booking-card">
-									<div class="book-container">
-										<div id="p1" class="carousel slide"  data-ride="carousel">
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="First slide">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2012/03/01/00/55/garden-19830_960_720.jpg" alt="Second slide">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014_960_720.jpg" alt="Third slide">
-												</div>
-											</div>
-										 </div>
-										<div class="content">
-											<button class="btn" onclick="location.href='detail.html'">View</button>
-										</div>
-									</div>
-									<div class="informations-container">
-										<h2 class="title">Title Lorem Ipsum is simply</h2>
-										<p class="sub-title font-weight-bold">Price : $593</p>
-										<p class="sub-title">Category : Auto</p>
-										<p class="sub-title">Type : Sale</p>
-										<div class="content mt-3">
-											<button class="btn btn-site pl-4 pr-4">Whatsapp</button>
-										</div>
-										<p class="disclaimer mt-3">Lorem Ipsum is simply dummy</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-							<ul>
-								<li class="booking-card">
-									<div class="book-container">
-										<div id="p1" class="carousel slide"  data-ride="carousel">
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="First slide">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2012/03/01/00/55/garden-19830_960_720.jpg" alt="Second slide">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014_960_720.jpg" alt="Third slide">
-												</div>
-											</div>
-										 </div>
-										<div class="content">
-											<button class="btn" onclick="location.href='detail.html'">View</button>
-										</div>
-									</div>
-									<div class="informations-container">
-										<h2 class="title">Title Lorem Ipsum is simply</h2>
-										<p class="sub-title font-weight-bold">Price : $593</p>
-										<p class="sub-title">Category : Auto</p>
-										<p class="sub-title">Type : Sale</p>
-										<div class="content mt-3">
-											<button class="btn btn-site pl-4 pr-4">Whatsapp</button>
-										</div>
-										<p class="disclaimer mt-3">Lorem Ipsum is simply dummy</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-							<ul>
-								<li class="booking-card">
-									<div class="book-container">
-										<div id="p1" class="carousel slide"  data-ride="carousel">
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="First slide">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2012/03/01/00/55/garden-19830_960_720.jpg" alt="Second slide">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014_960_720.jpg" alt="Third slide">
-												</div>
-											</div>
-										 </div>
-										<div class="content">
-											<button class="btn" onclick="location.href='detail.html'">View</button>
-										</div>
-									</div>
-									<div class="informations-container">
-										<h2 class="title">Title Lorem Ipsum is simply</h2>
-										<p class="sub-title font-weight-bold">Price : $593</p>
-										<p class="sub-title">Category : Auto</p>
-										<p class="sub-title">Type : Sale</p>
-										<div class="content mt-3">
-											<button class="btn btn-site pl-4 pr-4">Whatsapp</button>
-										</div>
-										<p class="disclaimer mt-3">Lorem Ipsum is simply dummy</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-							<ul>
-								<li class="booking-card">
-									<div class="book-container">
-										<div id="p1" class="carousel slide"  data-ride="carousel">
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="First slide">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2012/03/01/00/55/garden-19830_960_720.jpg" alt="Second slide">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014_960_720.jpg" alt="Third slide">
-												</div>
-											</div>
-										 </div>
-										<div class="content">
-											<button class="btn" onclick="location.href='detail.html'">View</button>
-										</div>
-									</div>
-									<div class="informations-container">
-										<h2 class="title">Title Lorem Ipsum is simply</h2>
-										<p class="sub-title font-weight-bold">Price : $593</p>
-										<p class="sub-title">Category : Auto</p>
-										<p class="sub-title">Type : Sale</p>
-										<div class="content mt-3">
-											<button class="btn btn-site pl-4 pr-4">Whatsapp</button>
-										</div>
-										<p class="disclaimer mt-3">Lorem Ipsum is simply dummy</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-							<ul>
-								<li class="booking-card">
-									<div class="book-container">
-										<div id="p1" class="carousel slide"  data-ride="carousel">
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="First slide">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2012/03/01/00/55/garden-19830_960_720.jpg" alt="Second slide">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014_960_720.jpg" alt="Third slide">
-												</div>
-											</div>
-										 </div>
-										<div class="content">
-											<button class="btn" onclick="location.href='detail.html'">View</button>
-										</div>
-									</div>
-									<div class="informations-container">
-										<h2 class="title">Title Lorem Ipsum is simply</h2>
-										<p class="sub-title font-weight-bold">Price : $593</p>
-										<p class="sub-title">Category : Auto</p>
-										<p class="sub-title">Type : Sale</p>
-										<div class="content mt-3">
-											<button class="btn btn-site pl-4 pr-4">Whatsapp</button>
-										</div>
-										<p class="disclaimer mt-3">Lorem Ipsum is simply dummy</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-							<ul>
-								<li class="booking-card">
-									<div class="book-container">
-										<div id="p1" class="carousel slide"  data-ride="carousel">
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="First slide">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2012/03/01/00/55/garden-19830_960_720.jpg" alt="Second slide">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014_960_720.jpg" alt="Third slide">
-												</div>
-											</div>
-										 </div>
-										<div class="content">
-											<button class="btn" onclick="location.href='detail.html'" >View</button>
-										</div>
-									</div>
-									<div class="informations-container">
-										<h2 class="title">Title Lorem Ipsum is simply</h2>
-										<p class="sub-title font-weight-bold">Price : $593</p>
-										<p class="sub-title">Category : Auto</p>
-										<p class="sub-title">Type : Sale</p>
-										<div class="content mt-3">
-											<button class="btn btn-site pl-4 pr-4">Whatsapp</button>
-										</div>
-										<p class="disclaimer mt-3">Lorem Ipsum is simply dummy</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-							<ul>
-								<li class="booking-card">
-									<div class="book-container">
-										<div id="p1" class="carousel slide"  data-ride="carousel">
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="First slide">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2012/03/01/00/55/garden-19830_960_720.jpg" alt="Second slide">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014_960_720.jpg" alt="Third slide">
-												</div>
-											</div>
-										 </div>
-										<div class="content">
-											<button class="btn" onclick="location.href='detail.html'">View</button>
-										</div>
-									</div>
-									<div class="informations-container">
-										<h2 class="title">Title Lorem Ipsum is simply</h2>
-										<p class="sub-title font-weight-bold">Price : $593</p>
-										<p class="sub-title">Category : Auto</p>
-										<p class="sub-title">Type : Sale</p>
-										<div class="content mt-3">
-											<button class="btn btn-site pl-4 pr-4">Whatsapp</button>
-										</div>
-										<p class="disclaimer mt-3">Lorem Ipsum is simply dummy</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-							<ul>
-								<li class="booking-card">
-									<div class="book-container">
-										<div id="p1" class="carousel slide"  data-ride="carousel">
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="First slide">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2012/03/01/00/55/garden-19830_960_720.jpg" alt="Second slide">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014_960_720.jpg" alt="Third slide">
-												</div>
-											</div>
-										 </div>
-										<div class="content">
-											<button class="btn" onclick="location.href='detail.html'" >View</button>
-										</div>
-									</div>
-									<div class="informations-container">
-										<h2 class="title">Title Lorem Ipsum is simply</h2>
-										<p class="sub-title font-weight-bold">Price : $593</p>
-										<p class="sub-title">Category : Auto</p>
-										<p class="sub-title">Type : Sale</p>
-										<div class="content mt-3">
-											<button class="btn btn-site pl-4 pr-4">Whatsapp</button>
-										</div>
-										<p class="disclaimer mt-3">Lorem Ipsum is simply dummy</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-							<ul>
-								<li class="booking-card">
-									<div class="book-container">
-										<div id="p1" class="carousel slide"  data-ride="carousel">
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="First slide">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2012/03/01/00/55/garden-19830_960_720.jpg" alt="Second slide">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block img-fluid" style="height: 354px;" src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014_960_720.jpg" alt="Third slide">
-												</div>
-											</div>
-										 </div>
-										<div class="content">
-											<button class="btn" onclick="location.href='detail.html'" >View</button>
-										</div>
-									</div>
-									<div class="informations-container">
-										<h2 class="title">Title Lorem Ipsum is simply</h2>
-										<p class="sub-title font-weight-bold">Price : $593</p>
-										<p class="sub-title">Category : Auto</p>
-										<p class="sub-title">Type : Sale</p>
-										<div class="content mt-3">
-											<button class="btn btn-site pl-4 pr-4">Whatsapp</button>
-										</div>
-										<p class="disclaimer mt-3">Lorem Ipsum is simply dummy</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-						</div>
-					</div>
-				</div>
-		
-						<div class="text-center mt-4">
-							<img src="img/loading.gif">
-						</div>
-					</section>
-						<!-------------END Section Products Card------------------->
-						<!------------------- Footer Section ---------------------->
+			<!--.carousel-inner-->
+		</div>
+			<!--.Carousel-->
+
+	</div>
+</div>
+<!-- End Slider -->
+	</div>
+	</div>
+</section>
+
+<!------------ Banner Section  ------------>
+<div class="container">
+	<div class="jumbotron jumbotron-fluid text-center">
+	   <h5>Download the official App of Subito.</h5>
+	   <p>Search through thousands of ads and post yours, wherever you are.</p>
+	</div>
+</div>
+        <!------------------- Footer Section ---------------------->
 						<footer>
 							<div class="footer-middle">
 								<div class="container">
@@ -482,9 +298,10 @@
 								</div>
 							</div>
 						</footer>
-					</body>
+                    </body>
 					<!-- Javascript Section -->
-					<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+                    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+                    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
 					<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
 					<script  src="js/script.js"></script>
 				</body>
